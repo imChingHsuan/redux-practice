@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { increment, decrement } from "./actions";
 
 function App() {
+  //useSelector's data is from reducers
   const count = useSelector((data) => data.counter);
   const isLogged = useSelector((data) => data.isLogged);
   const dispatch = useDispatch();
